@@ -21,16 +21,16 @@
       </template>
       <!-- drawer-icon -->
       <v-app-bar-nav-icon
-        color="primary"
+        color="white"
         @click="Toggledrawer"
       ></v-app-bar-nav-icon>
       <!-- title -->
-      <v-toolbar-title class="text-uppercase grey--text">
-        <span class="font-weight-light">颠覆</span>
+      <v-toolbar-title class="white--text">
+        <span class="font-weight-light">Youlong</span>
         <span
           class="font-weight
         "
-          >{{ username }}</span
+          > DING</span
         >
       </v-toolbar-title>
       <v-spacer></v-spacer>
@@ -50,8 +50,12 @@
         </v-list>
       </v-menu>
       <!-- logout -->
-      <v-btn text color="grey" @click="exit"
+      <!-- <v-btn text color="grey" @click="exit"
         ><span>Sign out</span><v-icon right> mdi-exit-to-app </v-icon></v-btn
+      > -->
+      <v-btn text color="grey" v-for="url in urls" :key="url.id"
+         @click="openURL(url.to)" fab
+        ><v-icon large> {{ url.icon }} </v-icon></v-btn
       >
     </v-app-bar>
     <!-- drawer -->
@@ -63,7 +67,7 @@
       <!-- user info -->
       <v-row justify="center" class="my-5">
         <v-avatar size="100" class="grey lighten-2">
-          <img src="/avatar-2.png" />
+          <img src="/tintin.jpeg" />
         </v-avatar>
       </v-row>
       <v-row justify="center">
@@ -75,16 +79,6 @@
 
       <!-- navigation -->
       <v-list dark rounded>
-        <!-- <v-list-item-group v-model="selectedItem" color="primary">
-          <v-list-item v-for="link in links" :key="link.id" :to="link.route">
-            <v-list-item-action>
-              <v-icon>{{ link.icon }}</v-icon>
-            </v-list-item-action>
-            <v-list-item-content>
-              <v-list-item-title> {{ link.txt }}</v-list-item-title>
-            </v-list-item-content>
-        </v-list-item-group> -->
-
         <v-list-group
           v-for="item in items"
           :key="item.title"
@@ -113,58 +107,6 @@
     </v-navigation-drawer>
   </nav>
 
-  <!-- 
-    <v-app-bar
-      absolute
-      color="#6A76AB"color="#43a047"
-      dark
-      shrink-on-scroll
-      prominent
-      src="https://picsum.photos/1920/1080?random"
-      fade-img-on-scroll
-      scroll-target="#scrolling-techniques-3"
-    >
-      <template v-slot:img="{ props }">
-        <v-img
-          v-bind="props"
-          gradient="to top right, rgba(100,115,201,.7), rgba(25,32,72,.7)"
-          gradient="to top right, rgba(55,236,186,.7), rgba(25,32,72,.7)"
-        ></v-img>
-      </template>
-
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
-
-      <v-toolbar-title>Title</v-toolbar-title>
-
-      <v-spacer></v-spacer>
-
-      <v-btn icon>
-        <v-icon>mdi-magnify</v-icon>
-      </v-btn>
-
-      <v-btn icon>
-        <v-icon>mdi-heart</v-icon>
-      </v-btn>
-
-      <v-btn icon>
-        <v-icon>mdi-dots-vertical</v-icon>
-      </v-btn>
-
-      <template v-slot:extension>
-        <v-tabs align-with-title>
-          <v-tab>Tab 1</v-tab>
-          <v-tab>Tab 2</v-tab>
-          <v-tab>Tab 3</v-tab>
-        </v-tabs>
-      </template>
-    </v-app-bar>
-    <v-sheet
-      id="scrolling-techniques-3"
-      class="overflow-y-auto"
-      max-height="600"
-    >
-      <v-container style="height: 1000px;"></v-container>
-    </v-sheet> -->
 </template>
 <script>
 import Popup from "@/components/Popup.vue";
@@ -182,31 +124,11 @@ export default {
     selectedItem: 1,
 
     items: [
-      // {
-      //   action: "mdi-ticket",
-      //   // items: [{ title: "List Item" }],
-      //   title: "Attractions",
-      // },
-      // {
-      //   action: "mdi-silverware-fork-knife",
-      //   active: true,
-      //   items: [
-      //     { title: "Breakfast & brunch" },
-      //     { title: "New American" },
-      //     { title: "Sushi" },
-      //   ],
-      //   title: "Dining",
-      // },
       {
         action: "mdi-school",
         items: [{ title: "Data Structure", route: "/education/datastructure" }],
         title: "Education",
       },
-      // {
-      //   action: "mdi-run",
-      //   items: [{ title: "List Item" }],
-      //   title: "Family",
-      // },
       {
         action: "mdi-music",
         items: [
@@ -215,16 +137,12 @@ export default {
         ],
         title: "Music",
       },
-      // {
-      //   action: "mdi-content-cut",
-      //   items: [{ title: "List Item" }],
-      //   title: "Office",
-      // },
-      // {
-      //   action: "mdi-tag",
-      //   items: [{ title: "List Item" }],
-      //   title: "Promotions",
-      // },
+    ],
+
+    urls: [
+      { icon: "mdi-linkedin", to: 'https://www.linkedin.com/in/youlong-ding-2368701a6/'},
+      { icon: "mdi-github", to: 'https://github.com/YoulongDing'},
+      { icon: "mdi-twitter", to: 'https://twitter.com/DylonTin'},
     ],
 
     links: [
@@ -233,6 +151,7 @@ export default {
       { icon: "mdi-account", txt: "Explore", route: "/explore" },
       { icon: "mdi-account", txt: "Team", route: "/team" },
     ],
+
     snackbar: false,
   }),
   methods: {
@@ -247,6 +166,10 @@ export default {
       this.$store.dispatch("app/exit").then(() => {
         this.$router.push({ name: "Home" });
       });
+    },
+    openURL(url) {
+      window.open(url, "_blank");
+      //window.location.href = url : 当前页面重定向
     },
   },
 };
