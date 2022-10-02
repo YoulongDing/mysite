@@ -9,7 +9,7 @@ import {
 } from "@/utils/app";
 
 const state = {
-  drawer: JSON.parse(sessionStorage.getItem("drawer")) || false,
+  drawer: JSON.parse(sessionStorage.getItem("drawer")) || true,
   Token: getToken() || "",
   username: getUsername() || "",
 };

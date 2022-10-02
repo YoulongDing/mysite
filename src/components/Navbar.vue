@@ -12,31 +12,31 @@
       </template>
     </v-snackbar>
 
-    <v-app-bar app dark class="bg" src="https://picsum.photos/1920/1080?random">
+    <!-- <v-app-bar app dark class="bg" src="https://picsum.photos/1920/1080?random">
       <template v-slot:img="{ props }">
         <v-img
           v-bind="props"
           gradient="to right, rgba(100,115,201,.7), rgba(25,32,72,.7)"
         ></v-img>
-      </template>
+      </template> -->
+    <v-app-bar app src="bg.png" flat>
       <!-- drawer-icon -->
       <v-app-bar-nav-icon
         color="white"
         @click="Toggledrawer"
       ></v-app-bar-nav-icon>
+
       <!-- title -->
-      <v-toolbar-title class="white--text">
-        <span class="font-weight-light">Youlong</span>
-        <span
-          class="font-weight
-        "
-          > DING</span
-        >
-      </v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-toolbar-title class="white--text title">
+        <div  justify="center">
+        <span class="font-weight">Youlong</span>
+        <span class="font-weight-bold"> DING</span></div>
+      </v-toolbar-title> 
       <v-spacer></v-spacer>
 
       <!-- dropdown menu -->
-      <v-menu open-on-hover bottom offset-y>
+      <!-- <v-menu open-on-hover bottom offset-y>
         <template v-slot:activator="{ on, attrs }">
           <v-btn color="grey" dark text v-bind="attrs" v-on="on">
             <span>Menu</span>
@@ -48,24 +48,18 @@
             <v-list-item-title>{{ link.txt }}</v-list-item-title>
           </v-list-item>
         </v-list>
-      </v-menu>
+      </v-menu> -->
       <!-- logout -->
       <!-- <v-btn text color="grey" @click="exit"
         ><span>Sign out</span><v-icon right> mdi-exit-to-app </v-icon></v-btn
       > -->
-      <v-btn text color="grey" v-for="url in urls" :key="url.id"
+      <!-- <v-btn text color="white" v-for="url in urls" :key="url.id"
          @click="openURL(url.to)" fab
         ><v-icon large> {{ url.icon }} </v-icon></v-btn
-      >
+      > -->
     </v-app-bar>
-    <!-- drawer -->
-    <v-navigation-drawer
-      v-model="drawer"
-      app
-      src="https://i.picsum.photos/id/354/1920/1080.jpg?hmac=38AfmYH3I1vOfmdGEaCBG9BB5RQFTzGoBas-GSEICrs"
-    >
-      <!-- user info -->
-      <v-row justify="center" class="my-5">
+    
+    <!-- <v-row justify="center" class="my-5">
         <v-avatar size="100" class="grey lighten-2">
           <img src="/tintin.jpeg" />
         </v-avatar>
@@ -77,7 +71,6 @@
         <Popup @projectAdded="snackbar = true" />
       </v-row>
 
-      <!-- navigation -->
       <v-list dark rounded>
         <v-list-group
           v-for="item in items"
@@ -103,7 +96,86 @@
             </v-list-item-content>
           </v-list-item>
         </v-list-group>
-      </v-list>
+      </v-list> -->
+
+
+    <v-navigation-drawer
+      v-model="drawer"
+      app
+      color="rgba(255, 255, 255, 0)"
+    >
+
+      <v-row justify="center" class="mt-15 mb-3">
+        <v-avatar size="100" class="grey lighten-2">
+          <img src="/tintin.jpeg" />
+        </v-avatar>
+      </v-row>
+      
+      <v-row justify="center">
+      <p class="white--text title mt-0">Dylon</p>
+      </v-row>
+      <v-row justify="center">
+      <p class="white--text subtitle mt-1">dingyoulon@gmail.com</p>
+      </v-row>
+
+      <v-row justify="center">
+      <v-btn text color="white" v-for="url in urls" :key="url.id"
+         @click="openURL(url.to)" fab
+        ><v-icon large> {{ url.icon }} </v-icon></v-btn>
+      </v-row>
+      <!-- <v-row justify="center">
+        <p class="white--text headline mt-1">{{ username }}</p>
+      </v-row>
+      <v-row justify="center" class="my-4">
+        <Popup @projectAdded="snackbar = true" />
+      </v-row> -->
+
+      <v-list flat dark>
+      <!-- <v-subheader>REPORTS</v-subheader> -->
+      <v-list-item-group
+        v-model="selectedItem"
+        color="primary"
+      >
+        <v-list-item
+          v-for="(item, i) in items"
+          :key="i"
+          :to="item.route"
+        >
+          <v-list-item-icon>
+            <v-icon v-text="item.action"></v-icon>
+          </v-list-item-icon>
+          <v-list-item-content class="white--text">
+            <v-list-item-title v-text="item.title"></v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list-item-group>
+    </v-list>
+      <!-- <v-list dark rounded>
+        <v-list-group
+          v-for="item in items"
+          :key="item.title"
+          v-model="item.active"
+          :prepend-icon="item.action"
+          no-action
+          color="primary"
+        >
+          <template v-slot:activator>
+            <v-list-item-content>
+              <v-list-item-title v-text="item.title"></v-list-item-title>
+            </v-list-item-content>
+          </template>
+
+          <v-list-item
+            v-for="link in item.items"
+            :key="link.id"
+            :to="link.route"
+          >
+            <v-list-item-content>
+              <v-list-item-title> {{ link.title }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list-group>
+      </v-list> -->
     </v-navigation-drawer>
   </nav>
 
@@ -125,24 +197,32 @@ export default {
 
     items: [
       {
-        action: "mdi-school",
-        items: [{ title: "Data Structure", route: "/education/datastructure" }],
-        title: "Education",
+        action: "mdi-music",
+        title: "Home",
+        route: "/"
       },
       {
         action: "mdi-music",
-        items: [
-          { title: "music store", route: "/explore" },
-          { title: "shop cart", route: "/shopcart" },
-        ],
-        title: "Music",
+        title: "Awards",
+        route: "/awards"
+      },
+      {
+        action: "mdi-music",
+        title: "Sports Career",
+        route: "/sports"
+      },
+      {
+        action: "mdi-music",
+        title: "Resources",
+        route: "/resources"
       },
     ],
 
     urls: [
-      { icon: "mdi-linkedin", to: 'https://www.linkedin.com/in/youlong-ding-2368701a6/'},
-      { icon: "mdi-github", to: 'https://github.com/YoulongDing'},
       { icon: "mdi-twitter", to: 'https://twitter.com/DylonTin'},
+      { icon: "mdi-linkedin", to: 'https://www.linkedin.com/in/Youlong-ding-2368701a6/'},
+      { icon: "mdi-github", to: 'https://github.com/YoulongDing'},
+
     ],
 
     links: [

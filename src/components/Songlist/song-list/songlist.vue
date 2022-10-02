@@ -94,8 +94,8 @@
   </div>
 </template>
 <script>
-import songdetail from "components/songdetail/songdetail";
-import { retrieveSong } from "api/song";
+import songdetail from "@/components/songdetail/songdetail";
+import { retrieveSong } from "@/api/song";
 export default {
   data() {
     return {

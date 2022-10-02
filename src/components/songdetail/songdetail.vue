@@ -443,8 +443,8 @@
   </v-dialog>
 </template>
 <script>
-import { getFav, addFav, delFav } from "api/song";
-import { addShopCart } from "api/shopcart";
+import { getFav, addFav, delFav } from "@/api/song";
+import { addShopCart } from "@/api/shopcart";
 const gradients = [
   ["#222"],
   ["#42b3f4"],

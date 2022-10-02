@@ -4,6 +4,11 @@ import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify'
 
+import global from "@/utils/global.js";
+
+Vue.use(global);
+
+
 Vue.config.productionTip = false
 
 new Vue({

@@ -200,10 +200,10 @@
   </div>
 </template>
 <script>
-import listnav from "components/Songlist/list-nav/list-nav";
-import listsong from "components/Songlist/song-list/songlist";
+import listnav from "@/components/Songlist/list-nav/list-nav";
+import listsong from "@/components/Songlist/song-list/songlist";
 
-import { getCategory, getSong } from "api/song";
+import { getCategory, getSong } from "@/api/song";
 export default {
   data() {
     // let self = this;
