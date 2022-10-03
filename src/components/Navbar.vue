@@ -19,7 +19,7 @@
           gradient="to right, rgba(100,115,201,.7), rgba(25,32,72,.7)"
         ></v-img>
       </template> -->
-    <v-app-bar app src="bg.png" flat>
+    <v-app-bar app :src="require('../../static/bg.png')" flat>
       <!-- drawer-icon -->
       <v-app-bar-nav-icon
         color="white"
@@ -107,18 +107,18 @@
 
       <v-row justify="center" class="mt-15 mb-3">
         <v-avatar size="100" class="grey lighten-2">
-          <img src="/tintin.jpeg" />
+          <img :src="require('../../static/tintin.jpeg')" />
         </v-avatar>
       </v-row>
       
       <v-row justify="center">
-      <p class="white--text title mt-0">Dylon</p>
+      <p class="white--text title mb-2">Dylon</p>
       </v-row>
       <v-row justify="center">
-      <p class="white--text subtitle mt-1">dingyoulon@gmail.com</p>
+      <p class="white--text subtitle mb-3">dingyoulon@gmail.com</p>
       </v-row>
 
-      <v-row justify="center">
+      <v-row justify="center" class="mb-3">
       <v-btn text color="white" v-for="url in urls" :key="url.id"
          @click="openURL(url.to)" fab
         ><v-icon large> {{ url.icon }} </v-icon></v-btn>
@@ -197,22 +197,22 @@ export default {
 
     items: [
       {
-        action: "mdi-music",
+        action: "mdi-home",
         title: "Home",
         route: "/"
       },
       {
-        action: "mdi-music",
+        action: "mdi-trophy",
         title: "Awards",
         route: "/awards"
       },
       {
-        action: "mdi-music",
+        action: "mdi-run-fast",
         title: "Sports Career",
         route: "/sports"
       },
       {
-        action: "mdi-music",
+        action: "mdi-bookmark-box-multiple",
         title: "Resources",
         route: "/resources"
       },
@@ -223,13 +223,6 @@ export default {
       { icon: "mdi-linkedin", to: 'https://www.linkedin.com/in/Youlong-ding-2368701a6/'},
       { icon: "mdi-github", to: 'https://github.com/YoulongDing'},
 
-    ],
-
-    links: [
-      { icon: "mdi-view-dashboard", txt: "Dashboard", route: "/dashboard" },
-      { icon: "mdi-folder", txt: "My Projects", route: "/projects" },
-      { icon: "mdi-account", txt: "Explore", route: "/explore" },
-      { icon: "mdi-account", txt: "Team", route: "/team" },
     ],
 
     snackbar: false,

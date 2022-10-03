@@ -9,8 +9,16 @@
       max-width="250"
       src="signature.png"
     ></v-img> -->
-    <div class="white--text font-weight-bold body-1">I am an undergrad at Shenzhen University and a research intern at WeBank AI Group. My research interest is privacy-preserving machine learning.</div>
+    <div class="white--text body-1 my-10">I am currently a forth-year CS undergrad at Shenzhen University. I am also a research intern in <a href="https://ai.webank.com/pages/en.html" class="white--text font-weight-bold">WeBank AI Group</a>. My research interest is in privacy-preserving machine learning. <span class="font-weight-bold">I am looking for the PhD postion in 23 Fall </span>(my <a href="https://drive.google.com/file/d/1o-M1Ar_d8M7sLXz5HwJzamGdpcqkEhAW/view?usp=sharing" class="white--text font-weight-bold">CV</a>).</div>
+
+
+    <div class="white--text body-1">
+      <span class="font-weight-bold">News:</span>
+      I have won 2rd place in <a href="https://mlmac.io/" class="white--text font-weight-bold">MLMAC 2022</a>. See you at <a href="https://satml.org/" class="white--text font-weight-bold">SATML 2023</a> in February 2023, North Carolina.
+    </div>
+
     </v-container>
+    <!-- <a :href="{{cv}}"></a> -->
     <!-- <v-btn to="/About">gggg</v-btn> -->
     <!-- <v-btn to="/projects">ppp</v-btn> -->
     <!-- <v-btn to="/resources">resources</v-btn> -->
@@ -28,6 +36,11 @@ export default {
   name: 'Home',
   components: {
     // Navbar
-  }
+  },
+  data: () => ({
+      // cv = require("/Users/mac/Downloads/resume.pdf")
+    //
+  }),
+  
 }
 </script>

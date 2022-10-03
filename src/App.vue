@@ -55,7 +55,8 @@ export default {
 /* background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 40%, #ff5858 80%, #f09819 100%); */
 /* background: url('https://i.picsum.photos/id/377/1920/1080.jpg?hmac=QSqCTgRp4aFg8enHBcJvT1qxiAThtGVmq8UL3DaLDuU'); */
 /* background: "url(" + require("/Users/mac/Downloads/bg.png") + ")",; */
-background-image: "url(" + require("/Users/mac/Downloads/bg.png") + ")",;
+/* background-image: "url(" + require("/Users/mac/Downloads/bg.png") + ")",; */
+background-image: "url(" + require("../static/bg.png") + ")",;
 background-attachment: "fixed";
 min-height: 100%;
 background-repeat: "no-repeat";
