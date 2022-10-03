@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <!-- <span class="white--text">This website is still in development.</span>  -->
     <v-container>
       <!-- <h1 class="text-h2 white--text">Youlong DING</h1>  -->
       <!-- <v-img
@@ -18,12 +17,6 @@
     </div>
 
     </v-container>
-    <!-- <a :href="{{cv}}"></a> -->
-    <!-- <v-btn to="/About">gggg</v-btn> -->
-    <!-- <v-btn to="/projects">ppp</v-btn> -->
-    <!-- <v-btn to="/resources">resources</v-btn> -->
-    <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   </div>
 </template>
 
@@ -31,15 +24,12 @@
 // @ is an alias to /src
 // import HelloWorld from '@/components/HelloWorld.vue'
 
-
 export default {
   name: 'Home',
   components: {
     // Navbar
   },
   data: () => ({
-      // cv = require("/Users/mac/Downloads/resume.pdf")
-    //
   }),
   
 }

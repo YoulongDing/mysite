@@ -102,13 +102,6 @@ export default {
       },
     ],
 
-
-     photos: [
-      {
-        src: "url(" + require("/Users/mac/Downloads/bg.png"),
-      },
-     ],
-
     careers: [
       {
         title: "Midfielder, Soccer, 2014 -- 2018",

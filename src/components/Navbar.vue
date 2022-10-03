@@ -12,13 +12,6 @@
       </template>
     </v-snackbar>
 
-    <!-- <v-app-bar app dark class="bg" src="https://picsum.photos/1920/1080?random">
-      <template v-slot:img="{ props }">
-        <v-img
-          v-bind="props"
-          gradient="to right, rgba(100,115,201,.7), rgba(25,32,72,.7)"
-        ></v-img>
-      </template> -->
     <v-app-bar app :src="require('../../static/bg.png')" flat>
       <!-- drawer-icon -->
       <v-app-bar-nav-icon
@@ -35,69 +28,7 @@
       </v-toolbar-title> 
       <v-spacer></v-spacer>
 
-      <!-- dropdown menu -->
-      <!-- <v-menu open-on-hover bottom offset-y>
-        <template v-slot:activator="{ on, attrs }">
-          <v-btn color="grey" dark text v-bind="attrs" v-on="on">
-            <span>Menu</span>
-            <v-icon medium>mdi-menu-down</v-icon>
-          </v-btn>
-        </template>
-        <v-list>
-          <v-list-item v-for="link in links" :key="link.id" :to="link.route">
-            <v-list-item-title>{{ link.txt }}</v-list-item-title>
-          </v-list-item>
-        </v-list>
-      </v-menu> -->
-      <!-- logout -->
-      <!-- <v-btn text color="grey" @click="exit"
-        ><span>Sign out</span><v-icon right> mdi-exit-to-app </v-icon></v-btn
-      > -->
-      <!-- <v-btn text color="white" v-for="url in urls" :key="url.id"
-         @click="openURL(url.to)" fab
-        ><v-icon large> {{ url.icon }} </v-icon></v-btn
-      > -->
     </v-app-bar>
-    
-    <!-- <v-row justify="center" class="my-5">
-        <v-avatar size="100" class="grey lighten-2">
-          <img src="/tintin.jpeg" />
-        </v-avatar>
-      </v-row>
-      <v-row justify="center">
-        <p class="white--text headline mt-1">{{ username }}</p>
-      </v-row>
-      <v-row justify="center" class="my-4">
-        <Popup @projectAdded="snackbar = true" />
-      </v-row>
-
-      <v-list dark rounded>
-        <v-list-group
-          v-for="item in items"
-          :key="item.title"
-          v-model="item.active"
-          :prepend-icon="item.action"
-          no-action
-          color="primary"
-        >
-          <template v-slot:activator>
-            <v-list-item-content>
-              <v-list-item-title v-text="item.title"></v-list-item-title>
-            </v-list-item-content>
-          </template>
-
-          <v-list-item
-            v-for="link in item.items"
-            :key="link.id"
-            :to="link.route"
-          >
-            <v-list-item-content>
-              <v-list-item-title> {{ link.title }}</v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-        </v-list-group>
-      </v-list> -->
-
 
     <v-navigation-drawer
       v-model="drawer"
@@ -123,13 +54,7 @@
          @click="openURL(url.to)" fab
         ><v-icon large> {{ url.icon }} </v-icon></v-btn>
       </v-row>
-      <!-- <v-row justify="center">
-        <p class="white--text headline mt-1">{{ username }}</p>
-      </v-row>
-      <v-row justify="center" class="my-4">
-        <Popup @projectAdded="snackbar = true" />
-      </v-row> -->
-
+      
       <v-list flat dark>
       <!-- <v-subheader>REPORTS</v-subheader> -->
       <v-list-item-group
@@ -150,32 +75,6 @@
         </v-list-item>
       </v-list-item-group>
     </v-list>
-      <!-- <v-list dark rounded>
-        <v-list-group
-          v-for="item in items"
-          :key="item.title"
-          v-model="item.active"
-          :prepend-icon="item.action"
-          no-action
-          color="primary"
-        >
-          <template v-slot:activator>
-            <v-list-item-content>
-              <v-list-item-title v-text="item.title"></v-list-item-title>
-            </v-list-item-content>
-          </template>
-
-          <v-list-item
-            v-for="link in item.items"
-            :key="link.id"
-            :to="link.route"
-          >
-            <v-list-item-content>
-              <v-list-item-title> {{ link.title }}</v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-        </v-list-group>
-      </v-list> -->
     </v-navigation-drawer>
   </nav>
 
