@@ -23,24 +23,60 @@
         <v-divider></v-divider>
       </v-card> -->
 
-      <div class="white--text  body-1  dark my-5"
+      <div class="white--text  body-1  dark my-7 mx-5 text-justify"
           v-for="(item,i) in awards"
       :key="i">
-      <span class="font-weight-bold">{{item.title}}: </span>
-      <span>{{item.description}}</span>
-      <!-- <v-chip
-      color="green"
-      text-color="white"
-      flat
-    >
-      Green Chip
-    </v-chip> -->
+      <span class="font-weight-black">{{item.title}}. </span>
+      <span class="font-weight-medium text-caption">{{item.description}}</span>
       </div>
 
-      <v-divider dark></v-divider>
+      <v-divider dark class="my-10"></v-divider>
+      
+      <!-- ICPC -->
+      <v-row>
+        <v-col cols="4" class="pl-8">
+        <v-card elevation="20">
+          <v-img
+            lazy-src="https://picsum.photos/id/11/10/6"
+            :src="require('../../static/icpc_photo.jpg')"
+          ></v-img>
+        </v-card>
+        </v-col>
+        <v-col cols="8" class="px-10">
+          <div class="white--text font-weight mt-4 mb-10 text-justify">
+            In my spare time, I participated ICPC, the most prestigious programming contest in the world. We were fortunate to win two silver medals in Season 2020 and 2021, respectively.
+          </div>
+          
+          <div class="text-center white--text body-1  dark my-5"
+            v-for="(item,i) in awards_icpc"
+            :key="i">
+            <v-chip
+              color="white"
+              outlined
+            >
+              <v-icon left>
+                mdi-medal
+              </v-icon>
+              <span class="font-weight-black">{{item.title}}</span>
+            </v-chip>
+          </div>
+          <!-- <div class="white--text body-1  dark my-5"
+          v-for="(item,i) in awards_icpc"
+          :key="i">
+          <span class="font-weight-black">{{item.title}}. </span>
+          <span class="font-weight-medium text-caption">{{item.description}}</span>
+          </div> -->
+        </v-col>
+      </v-row>
 
-      <div class="white--text  body-1 my-5">
-      When I was in high school, I participated in <span class="font-weight-bold">Chinese Science Olympiads</span> in three different subjects: <span class="font-weight-bold">Mathematical, Physics </span> and <span class="font-weight-bold">Informatics</span> (the other remaining two are Chemistry and Biology). Interestingly, I was the first one in the history of our school to simultaneously achieve at least second prizes in all these three competitions. Therefore, I successfully gained entry to Peking University's Summer Camp on Informatics of 2018, at which I won the Excellent Camper. It turned out that I was the <a href="https://mp.weixin.qq.com/s/uOPIh92K0Dkrs0JF7upb4A" class="white--text">only one</a> in my city to achieve the Excellent Camper among scientific summer camps held by Peking University that year.
+
+
+      <v-divider dark class="my-10"></v-divider>
+
+      <div class="white--text  body-1 my-5 font-weight mx-5 text-justify">
+      When I was in high school, I participated in <span class="font-weight-black">Chinese Science Olympiads</span> in three different subjects: <span class="font-weight-black">Mathematics</span>, <a href="https://mp.weixin.qq.com/s/FYJYJpRLUmMEfLQ9kQboDw" class="white--text font-weight-black">Physics</a> and 
+      <a href="https://mp.weixin.qq.com/s/O1bjpwdin5uIeekOxQTUeg" class="white--text font-weight-black">Informatics</a>
+      (the other remaining two are Chemistry and Biology). I was honored to be the first person to simultaneously achieve at least second prizes in all these three competitions in the history of my school. Interestingly, my classmate also achieved it 2 months later than me, and up until now, we are still the only two. Then, I successfully gained entry to <span class="font-weight-black">Peking University's Summer Camp on Informatics</span> of 2018, at which I won the <span class="font-weight-black">Excellent Camper</span>. It turned out that I was the <a href="https://mp.weixin.qq.com/s/uOPIh92K0Dkrs0JF7upb4A" class="white--text font-weight-black">only one</a> in my city to achieve the Excellent Camper among all scientific summer camps held by Peking University that year.
       </div>
       <!-- <div class="white--text  body-1"
           v-for="(item,i) in awards_high"
@@ -72,13 +108,15 @@ export default {
           title: 'Excellent Star of SZU Nomination, 2021', 
           description: 'The highest honor-level scholarship at SZU, with award rate of 0.05%.', 
         },
+      ],
+      awards_icpc: [
         { 
           title: 'Silver Medal, ICPC Asia Regional Contest, Jinan site, 2021', 
-          description: 'The most prestigious international programming contest.', 
+          description: '', 
         },
         { 
           title: 'Silver Medal, ICPC Asia Regional Contest, Yinchuan site, 2020', 
-          description: 'The most prestigious international programming contest.', 
+          description: '', 
         },
       ],
       awards_high: [

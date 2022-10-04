@@ -52,7 +52,7 @@
             <v-card-title class="text-h5">
               {{item.heading}}
             </v-card-title>
-            <v-card-text>
+            <v-card-text class="text-justify">
               {{item.descrption}}
               <a href='https://mp.weixin.qq.com/s/H-d6C5EIm3Z2ZfqaCdmEwQ'>{{item.link}}</a>
               {{item.descrption2}}

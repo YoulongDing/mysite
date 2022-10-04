@@ -36,25 +36,29 @@
       color="rgba(255, 255, 255, 0)"
     >
 
-      <v-row justify="center" class="mt-15 mb-3">
+      <v-row justify="center" class="mt-15 mb-3 pt-15">
         <v-avatar size="100" class="grey lighten-2">
           <img :src="require('../../static/tintin.jpeg')" />
         </v-avatar>
       </v-row>
       
       <v-row justify="center">
-      <p class="white--text title mb-2">Dylon</p>
+      <p class="white--text text-h5 mb-5 font-weight-medium">Dylon</p>
       </v-row>
       <v-row justify="center">
-      <p class="white--text subtitle mb-3">dingyoulon@gmail.com</p>
+      <p class="white--text mb-0 font-weight-medium">Shenzhen, China</p>
+      </v-row>
+      <v-row justify="center">
+      <p class="white--text subtitle mb-5 font-weight-medium">dingyoulon@gmail.com</p>
       </v-row>
 
-      <v-row justify="center" class="mb-3">
+      <v-row justify="center" class="mb-0">
       <v-btn text color="white" v-for="url in urls" :key="url.id"
          @click="openURL(url.to)" fab
         ><v-icon large> {{ url.icon }} </v-icon></v-btn>
       </v-row>
-      
+
+      <v-row justify="center">
       <v-list flat dark>
       <!-- <v-subheader>REPORTS</v-subheader> -->
       <v-list-item-group
@@ -69,12 +73,13 @@
           <v-list-item-icon>
             <v-icon v-text="item.action"></v-icon>
           </v-list-item-icon>
-          <v-list-item-content class="white--text">
+          <v-list-item-content class="white--text font-weight-medium">
             <v-list-item-title v-text="item.title"></v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list-item-group>
     </v-list>
+      </v-row>
     </v-navigation-drawer>
   </nav>
 
@@ -97,22 +102,22 @@ export default {
     items: [
       {
         action: "mdi-home",
-        title: "Home",
+        title: "HOME",
         route: "/"
       },
       {
         action: "mdi-trophy",
-        title: "Awards",
+        title: "AWARDS",
         route: "/awards"
       },
       {
         action: "mdi-run-fast",
-        title: "Sports Career",
+        title: "SPORTS CAREER",
         route: "/sports"
       },
       {
         action: "mdi-bookmark-box-multiple",
-        title: "Resources",
+        title: "RESOURCES",
         route: "/resources"
       },
     ],

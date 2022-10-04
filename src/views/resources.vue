@@ -6,7 +6,7 @@
         <h1 class="text-h4 white--text text-center my-3">{{item.class}}</h1> 
         <div v-for="(subitem,i) in item.subitems"
         :key="i" class="my-3 text-center">
-        <a class="white--text font-weight-bold body-1" target=“_blank” :href=subitem.link>{{subitem.title}}</a>
+        <a class="white--text font-weight-medium body-1" target=“_blank” :href=subitem.link>{{subitem.title}}</a>
         </div>
       </div>
       <!-- <v-img
