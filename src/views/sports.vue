@@ -1,72 +1,89 @@
 <template>
   <div>
   <v-container>
-  <!-- <v-row>
-      <v-col cols="2">
-        <Navigation />
+    
+    <div class="mt-10 mb-5 mx-5 hidden-lg-and-up ">
+      <v-card elevation="20">
+        
+        <v-carousel cycle :show-arrows="true" dark  height="250" hide-delimiters>
+              <!-- <v-responsive :aspect-ratio="16/9"> -->
+            <!-- hide-delimiters -->
+            <v-carousel-item
+              v-for="(item,i) in items_small"
+              :key="i"
+              :src="item.src"
+            ></v-carousel-item>
+          </v-carousel>
+      </v-card>
+    </div>
+
+    <v-row class="mt-10 mb-5 mx-5 hidden-md-and-down">
+      <v-col lg="4" sm="12">
+        <v-card elevation="20" class="mx-2">
+          <v-carousel cycle :show-arrows="false" dark  hide-delimiters height="400">
+            <v-carousel-item
+              v-for="(item,i) in items_left"
+              :key="i"
+              :src="item.src"
+            ></v-carousel-item>
+          </v-carousel>
+        </v-card>
       </v-col>
-      <v-col cols="10">
-        <router-view />
+      <v-col lg="8" sm="12">
+        <v-card elevation="20" class="mx-2">
+          <v-carousel cycle :show-arrows="false" dark height="400">
+            <!-- hide-delimiters -->
+            <v-carousel-item
+              v-for="(item,i) in items_right"
+              :key="i"
+              :src="item.src"
+            ></v-carousel-item>
+          </v-carousel>
+        </v-card>
       </v-col>
-      </v-row> -->
-  <v-row>
-  <v-col cols="4">
-  <v-carousel cycle :show-arrows="false" dark  hide-delimiters>
-    <v-carousel-item
-      v-for="(item,i) in items_left"
-      :key="i"
-      :src="item.src"
-    ></v-carousel-item>
-  </v-carousel>
-  </v-col>
-  <v-col cols="8">
-  <v-carousel cycle :show-arrows="false" dark>
-    <!-- hide-delimiters -->
-    <v-carousel-item
-      v-for="(item,i) in items_right"
-      :key="i"
-      :src="item.src"
-    ></v-carousel-item>
-  </v-carousel>
-  </v-col>
-  </v-row>
+    </v-row>
+
+    <div class="white--text  body-1  dark my-7 mx-5 text-justify hidden-lg-and-up"
+          v-for="(item,i) in careers"
+          :key="i">
+      <div class="font-weight-black">{{item.title}} </div>
+      <div class="text-subtitle-1">{{item.heading}} </div>
+      <div class="text-body-1">{{item.descrption}}
+        <a href='https://mp.weixin.qq.com/s/H-d6C5EIm3Z2ZfqaCdmEwQ' class="white--text">{{item.link}}</a>
+          {{item.descrption2}}
+      </div>
+    </div>
+
   </v-container>
 
+  <!-- <v-container> -->
+  <v-timeline class="mx-15 px-15 mt-0 mb-10 hidden-md-and-down">
+    <v-timeline-item
+      v-for="item in careers"
+      :key="item.title"
+    >
+      <template v-slot:icon>
+        <v-avatar>
+          <v-icon color="white">{{item.icon}}</v-icon>
+        </v-avatar>
+      </template>
+      <template v-slot:opposite>
+        <span class="white--text font-weight-bold">{{item.title}}</span>
+      </template>
 
-    <!-- <v-container> -->
-      <v-timeline class="mx-15 px-15 my-10">
-        <v-timeline-item
-          v-for="item in careers"
-          :key="item.title"
-        >
-          <template v-slot:icon>
-            <v-avatar>
-              <v-icon color="white">{{item.icon}}</v-icon>
-            </v-avatar>
-          </template>
-          <template v-slot:opposite>
-            <span class="white--text font-weight-bold">{{item.title}}</span>
-          </template>
+      <v-card class="elevation-2">
+        <v-card-title class="text-h5">
+          {{item.heading}}
+        </v-card-title>
+        <v-card-text class="text-justify">
+          {{item.descrption}}
+          <a href='https://mp.weixin.qq.com/s/H-d6C5EIm3Z2ZfqaCdmEwQ'>{{item.link}}</a>
+          {{item.descrption2}}
+          </v-card-text>
+      </v-card>
+    </v-timeline-item>
+  </v-timeline>
 
-          <v-card class="elevation-2">
-            <v-card-title class="text-h5">
-              {{item.heading}}
-            </v-card-title>
-            <v-card-text class="text-justify">
-              {{item.descrption}}
-              <a href='https://mp.weixin.qq.com/s/H-d6C5EIm3Z2ZfqaCdmEwQ'>{{item.link}}</a>
-              {{item.descrption2}}
-              </v-card-text>
-          </v-card>
-        </v-timeline-item>
-      </v-timeline>
-      
-    <!-- </v-container> -->
-    <!-- <v-btn to="/About">gggg</v-btn>
-    <v-btn to="/projects">ppp</v-btn>
-    <v-btn to="/explore">qqq</v-btn> -->
-    <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   </div>
 </template>
 
@@ -87,6 +104,24 @@ export default {
       },
     ],
     items_right: [
+      {
+        src: require("../../static/photo5.jpg"),
+      },
+      {
+        src: require("../../static/photo2.jpg"),
+      },
+      {
+        src: require("../../static/photo3.jpg"),
+      },
+
+      {
+        src: require("../../static/photo4.jpg"),
+      },
+    ],
+    items_small: [
+      {
+        src: require("../../static/photo6.jpg"),
+      },
       {
         src: require("../../static/photo5.jpg"),
       },

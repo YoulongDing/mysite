@@ -2,7 +2,7 @@
   <div>
     <v-container>
       <div v-for="(item,i) in items"
-      :key="i" class="my-10">
+      :key="i" class="my-7">
         <h1 class="text-h4 white--text text-center my-3">{{item.class}}</h1> 
         <div v-for="(subitem,i) in item.subitems"
         :key="i" class="my-3 text-center">
@@ -51,7 +51,7 @@ export default {
         subitems: [
           
           {
-            title: "(UVa) cs387: Applied Cryptography",
+            title: "(UVa) CS 387: Applied Cryptography",
             link: "https://www.udacity.com/course/cs387"
           },
           {
