@@ -36,20 +36,20 @@
       color="rgba(255, 255, 255, 0)"
     >
 
-      <v-row justify="center" class="mt-15 mb-3 pt-15">
+      <v-row justify="center" class="mt-15 mb-3 pt-10">
         <v-avatar size="100" class="grey lighten-2">
           <img :src="require('../../static/tintin.jpeg')" />
         </v-avatar>
       </v-row>
       
       <v-row justify="center">
-      <p class="white--text text-h5 mb-5 font-weight-medium">Dylon</p>
+      <p class="white--text text-h5 mb-lg-5 mb-sm-1 mb-xs-1 font-weight-medium">Dylon</p>
       </v-row>
       <v-row justify="center">
       <p class="white--text mb-0 font-weight-medium">Shenzhen, China</p>
       </v-row>
       <v-row justify="center">
-      <p class="white--text subtitle mb-5 font-weight-medium">dingyoulon@gmail.com</p>
+      <p class="white--text subtitle mb-lg-5 mb-sm-1 mb-xs-1 font-weight-medium">dingyoulon@gmail.com</p>
       </v-row>
 
       <v-row justify="center" class="mb-0">

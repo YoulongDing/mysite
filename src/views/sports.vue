@@ -12,6 +12,7 @@
               v-for="(item,i) in items_small"
               :key="i"
               :src="item.src"
+              lazy-src="https://picsum.photos/id/11/10/6"
             ></v-carousel-item>
           </v-carousel>
       </v-card>
@@ -25,6 +26,7 @@
               v-for="(item,i) in items_left"
               :key="i"
               :src="item.src"
+              lazy-src="https://picsum.photos/id/11/10/6"
             ></v-carousel-item>
           </v-carousel>
         </v-card>
@@ -37,13 +39,14 @@
               v-for="(item,i) in items_right"
               :key="i"
               :src="item.src"
+              lazy-src="https://picsum.photos/id/11/10/6"
             ></v-carousel-item>
           </v-carousel>
         </v-card>
       </v-col>
     </v-row>
 
-    <div class="white--text  body-1  dark my-7 mx-5 text-justify hidden-lg-and-up"
+    <div class="white--text  body-1  dark my-7 mx-5 hidden-lg-and-up"
           v-for="(item,i) in careers"
           :key="i">
       <div class="font-weight-black">{{item.title}} </div>
@@ -75,7 +78,7 @@
         <v-card-title class="text-h5">
           {{item.heading}}
         </v-card-title>
-        <v-card-text class="text-justify">
+        <v-card-text>
           {{item.descrption}}
           <a href='https://mp.weixin.qq.com/s/H-d6C5EIm3Z2ZfqaCdmEwQ'>{{item.link}}</a>
           {{item.descrption2}}
@@ -113,10 +116,6 @@ export default {
       {
         src: require("../../static/photo3.jpg"),
       },
-
-      {
-        src: require("../../static/photo4.jpg"),
-      },
     ],
     items_small: [
       {
@@ -130,10 +129,6 @@ export default {
       },
       {
         src: require("../../static/photo3.jpg"),
-      },
-
-      {
-        src: require("../../static/photo4.jpg"),
       },
     ],
 

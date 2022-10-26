@@ -2,7 +2,7 @@
   <div>
     <v-container>
 
-      <div class="white--text  body-1  dark my-7 mx-5 text-justify"
+      <div class="white--text  body-1  dark my-7 mx-5"
           v-for="(item,i) in awards"
       :key="i">
       <span class="font-weight-black">{{item.title}}. </span>
@@ -11,6 +11,8 @@
 
       <v-divider dark class="my-10"></v-divider>
       
+      <!-- lazy-src="https://picsum.photos/id/11/10/6" -->
+      <!-- :src="require('../../static/icpc_photo.jpg')" -->
       <!-- ICPC -->
       <v-row class="mx-5 hidden-sm-and-down">
         <v-col sm="12" md="12" lg="4" class="pl-md-8">
@@ -22,8 +24,8 @@
         </v-card>
         </v-col>
         <v-col  sm="12" md="12" lg="8" class="px-lg-10 px-md-1">
-          <div class="white--text font-weight mt-4 mb-10 text-justify">
-            In my spare time, I participated in ICPC, which is the most prestigious programming contest in the world. We were fortunate to win two silver medals in Season 2020 and 2021, respectively.
+          <div class="white--text font-weight mt-4 mb-10">
+            In my spare time, I participated in <a href="https://icpc.global/" class="white--text font-weight-black" target=“_blank”>ICPC</a>, which is the most prestigious programming contest in the world. We were fortunate to win two silver medals in Season 2020 and 2021, respectively.
           </div>
           
 
@@ -50,8 +52,8 @@
             :src="require('../../static/icpc_photo.jpg')"
           ></v-img>
         </v-card>
-        <div class="white--text font-weight mt-6 mb-3 text-justify">
-            In my spare time, I participated in ICPC, which is the most prestigious programming contest in the world. We were fortunate to win two silver medals in Season 2020 and 2021, respectively.
+        <div class="white--text font-weight mt-6 mb-3">
+            In my spare time, I participated in <a href="https://icpc.global/" class="white--text font-weight-black" target=“_blank”>ICPC</a>, which is the most prestigious programming contest in the world. We were fortunate to win two silver medals in Season 2020 and 2021, respectively.
         </div>
         <div
           v-for="(item,i) in awards_icpc"
@@ -63,10 +65,10 @@
       
       <v-divider dark class="my-10"></v-divider>
 
-      <div class="white--text  body-1 my-5 font-weight mx-5 text-justify">
-      When I was in high school, I participated in three <span class="font-weight-black">Chinese Science Olympiads</span>: <span class="font-weight-black">Mathematics</span>, <a href="https://mp.weixin.qq.com/s/FYJYJpRLUmMEfLQ9kQboDw" class="white--text font-weight-black">Physics</a> and 
-      <a href="https://mp.weixin.qq.com/s/O1bjpwdin5uIeekOxQTUeg" class="white--text font-weight-black">Informatics</a>
-      (the other remaining two I did not participate in are Chemistry and Biology). I was honored to be the first person to simultaneously achieve at least second prizes in all these three competitions in the history of my school. Interestingly, my classmate also achieved it 2 months later than me, and up until now, we are still the only two. Then, I successfully gained entry to <span class="font-weight-black">Peking University's Summer Camp on Informatics</span> of 2018, at which I won the <span class="font-weight-black">Excellent Camper</span>. It turned out that I was the <a href="https://mp.weixin.qq.com/s/uOPIh92K0Dkrs0JF7upb4A" class="white--text font-weight-black">only one</a> in my city to achieve the Excellent Camper among all scientific summer camps held by Peking University that year.
+      <div class="white--text  body-1 my-5 font-weight mx-5">
+      When I was in high school, I participated in three <span class="font-weight-black">Chinese Science Olympiads</span>: <span class="font-weight-black">Mathematics</span>, <a href="https://mp.weixin.qq.com/s/FYJYJpRLUmMEfLQ9kQboDw" class="white--text font-weight-black" target=“_blank”>Physics</a> and 
+      <a href="https://mp.weixin.qq.com/s/O1bjpwdin5uIeekOxQTUeg" class="white--text font-weight-black" target=“_blank”>Informatics</a>
+      (the other remaining two I did not participate in are Chemistry and Biology). I was honored to be the first person in the history of my school to simultaneously achieve at least second prizes in these three competitions. Interestingly, my classmate also unlocked this achievement 2 months later than me, and up until now, we are still the only two. Then, I successfully gained entry to <span class="font-weight-black">Peking University's Summer Camp on Informatics</span> of 2018, at which I won the <span class="font-weight-black">Excellent Camper</span>. It turned out that I was the <a href="https://mp.weixin.qq.com/s/uOPIh92K0Dkrs0JF7upb4A" class="white--text font-weight-black" target=“_blank”>only one</a> in my city to achieve that among all scientific summer camps held by Peking University that year.
       </div>
       <!-- <div class="white--text  body-1"
           v-for="(item,i) in awards_high"

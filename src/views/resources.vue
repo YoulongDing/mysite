@@ -43,7 +43,11 @@ export default {
           {
             title: "Privacy and Security in ML Seminars",
             link: "https://prisec-ml.github.io/"
-          }
+          },
+          {
+            title: "Seminars on Security & Privacy in Machine Learning",
+            link: "https://vsehwag.github.io/SPML_seminar/"
+          },
         ]
       },
       {
@@ -59,8 +63,16 @@ export default {
             link: "http://www.gautamkamath.com/CS860-fa2020.html"
           },
           {
+            title: "(Columbia) TR's algorithm",
+            link: "http://timroughgarden.org/videos.html"
+          },
+          {
             title: "(BU) Privacy in Statistics and Machine Learning",
             link: "https://dpcourse.github.io/index.html"
+          },
+          {
+            title: "(Lille) Privacy Preserving Machine Learning",
+            link: "http://researchers.lille.inria.fr/abellet/teaching/private_machine_learning_course.html"
           },
           {
             title: "(BIU) The 12th BIU Winter School on Cryptography Advances in Secure Computation",
@@ -75,13 +87,37 @@ export default {
             link: "https://www.youtube.com/channel/UCcMwNzhpePJE3xzOP_3pqsw"
           },
           {
+            title: "(UVA) DEEP LEARNING COURSE (JAX)",
+            link: "https://uvadlc.github.io/"
+          },
+          {
             title: "(UMD) CMSC 828W: Foundations of Deep Learning",
             link: "https://www.cs.umd.edu/class/fall2020/cmsc828W/"
           },
+
+          {
+            title: "(UoT) ECE1784H/CSC2559H: Trustworthy Machine Learning",
+            link: "https://www.papernot.fr/teaching/f22-trustworthy-ml.html"
+          },
+          {
+            title: "(Cagliari) Machine Learning Security",
+            link: "https://unica-mlsec.github.io/mlsec/"
+
+          },
+          {
+            title: "(Harvard) CS197: AI Research Experiences",
+            link: "https://www.cs197.seas.harvard.edu/"
+          },
+
           {
             title: "(MIT) 6.S965: TinyML and Efficient Deep Learning",
             link: "https://efficientml.ai/"
           },
+          {
+            title: "(MIT) Missing Semester",
+            link: "https://www.youtube.com/watch?v=Z56Jmr9Z34Q&list=PLyzOVJj3bHQuloKGG59rS43e29ro7I57J&index=1"
+          },
+
         ]
       },
       {
@@ -162,6 +198,59 @@ export default {
           }
         ]
       },
+      {
+        class: "CTF",
+        subitems: [
+          {
+            title: "CTF Wiki",
+            link: "https://ctf-wiki.org/"
+          },
+          {
+            title: "Adworld",
+            link: "https://adworld.xctf.org.cn/home/index"
+          },
+          {
+            title: "BUUCTF",
+            link: "https://buuoj.cn/situation"
+          },
+          {
+            title: "Jarvisoj",
+            link: "https://www.jarvisoj.com/"
+          },
+          {
+            title: "gmpy2, pycryptodome, SageMath",
+            link: "https://ctf-wiki.org/"
+          }
+        ]
+      },
+      {
+        class: "Groups",
+        subitems: [
+          {
+            title: "MPI TCS",
+            link: "https://www.mpi-inf.mpg.de/departments/algorithms-complexity"
+          },
+        ]
+      },
+      {
+        class: "Blockchain",
+        subitems: [
+          {
+            title: "ETHEREUM",
+            link: "https://ethereum.org/en/developers/docs/"
+          },
+        ]
+      },
+      {
+        class: "YouTube channels",
+        subitems: [
+          {
+            title: "For personal development",
+            link: "https://twitter.com/MakadiaHarsh/status/1584168092027871233"
+          },
+        ]
+      },
+      
     ]
   })
 
