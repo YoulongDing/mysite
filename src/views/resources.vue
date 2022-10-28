@@ -102,7 +102,14 @@ export default {
           {
             title: "(Cagliari) Machine Learning Security",
             link: "https://unica-mlsec.github.io/mlsec/"
-
+          },
+          {
+            title: "(Dan Hendrycks) ML Safety",
+            link: "https://www.mlsafety.org/"
+          },
+          {
+            title: "(Dan Hendrycks) Center for AI Safety",
+            link: "https://safe.ai/"
           },
           {
             title: "(Harvard) CS197: AI Research Experiences",
@@ -242,11 +249,15 @@ export default {
         ]
       },
       {
-        class: "YouTube channels",
+        class: "YouTube videos",
         subitems: [
           {
             title: "For personal development",
             link: "https://twitter.com/MakadiaHarsh/status/1584168092027871233"
+          },
+          {
+            title: "Also for personal development",
+            link: "https://twitter.com/stepanhlinka/status/1585617297514823680"
           },
         ]
       },
