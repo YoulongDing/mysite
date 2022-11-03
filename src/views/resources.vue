@@ -67,6 +67,10 @@ export default {
             link: "http://timroughgarden.org/videos.html"
           },
           {
+            title: "(MOOC) Zero Knowledge Proofs",
+            link: "https://zk-learning.org/"
+          },
+          {
             title: "(BU) Privacy in Statistics and Machine Learning",
             link: "https://dpcourse.github.io/index.html"
           },
@@ -194,6 +198,10 @@ export default {
             title: "Machine Learning Research Blog",
             link: "https://francisbach.com/"
           },
+          {
+            title: "Apple Security Research",
+            link: "https://security.apple.com/"
+          },
         ]
       },
       {
@@ -259,6 +267,24 @@ export default {
             title: "Also for personal development",
             link: "https://twitter.com/stepanhlinka/status/1585617297514823680"
           },
+        ]
+      },
+      {
+        class: "Utility",
+        subitems: [
+          {
+            title: "Comic creation",
+            link: "https://app.pixton.com/"
+          },
+          {
+            title: "Transfer files",
+            link: "https://wetransfer.com/"
+          },
+          {
+            title: "Browser automation",
+            link: "https://axiom.ai/"
+          },
+          
         ]
       },
       

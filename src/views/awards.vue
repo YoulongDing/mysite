@@ -16,14 +16,14 @@
       <!-- ICPC -->
       <v-row class="mx-5 hidden-sm-and-down">
         <v-col sm="12" md="12" lg="4" class="pl-md-8">
-        <v-card elevation="20">
+        <v-card elevation="10">
           <v-img
             lazy-src="https://picsum.photos/id/11/10/6"
             :src="require('../../static/icpc_photo.jpg')"
           ></v-img>
         </v-card>
         </v-col>
-        <v-col  sm="12" md="12" lg="8" class="px-lg-10 px-md-1">
+        <v-col sm="12" md="12" lg="8" class="px-lg-10 px-md-1">
           <div class="white--text font-weight mt-4 mb-10">
             In my spare time, I participated in <a href="https://icpc.global/" class="white--text font-weight-black" target=“_blank”>ICPC</a>, which is the most prestigious programming contest in the world. We were fortunate to win two silver medals in Season 2020 and 2021, respectively.
           </div>
@@ -46,7 +46,7 @@
 
 
       <div class="white--text body-1 mx-5  dark my-5 hidden-md-and-up">
-        <v-card elevation="20">
+        <v-card elevation="10">
           <v-img
             lazy-src="https://picsum.photos/id/11/10/6"
             :src="require('../../static/icpc_photo.jpg')"

@@ -39,6 +39,7 @@
       <v-row justify="center" class="mt-15 mb-3 pt-10">
         <v-avatar size="100" class="grey lighten-2">
           <img :src="require('../../static/tintin.jpeg')" />
+          <!-- <img :src="require('../../static/dylon.jpeg')" /> -->
         </v-avatar>
       </v-row>
       
