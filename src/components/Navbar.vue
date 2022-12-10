@@ -124,7 +124,7 @@ export default {
     ],
 
     urls: [
-      { icon: "mdi-twitter", to: 'https://twitter.com/DylonTin'},
+      { icon: "mdi-twitter", to: 'https://twitter.com/YoulongDING'},
       { icon: "mdi-linkedin", to: 'https://www.linkedin.com/in/Youlong-ding-2368701a6/'},
       { icon: "mdi-github", to: 'https://github.com/YoulongDing'},
 

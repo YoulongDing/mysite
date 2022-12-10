@@ -5,7 +5,7 @@
       :key="i" class="my-7">
         <h1 class="text-h4 white--text text-center my-3">{{item.class}}</h1> 
         <div v-for="(subitem,i) in item.subitems"
-        :key="i" class="my-3 text-center">
+        :key="i" class="my-3 text-left">
         <a class="white--text font-weight-medium body-1" target=“_blank” :href=subitem.link>{{subitem.title}}</a>
         </div>
       </div>
@@ -38,37 +38,76 @@ export default {
   data: () => ({
     items:[
       {
-        class: "Seminars",
+        class: "Crypto",
         subitems: [
-          {
-            title: "Privacy and Security in ML Seminars",
-            link: "https://prisec-ml.github.io/"
-          },
-          {
-            title: "Seminars on Security & Privacy in Machine Learning",
-            link: "https://vsehwag.github.io/SPML_seminar/"
-          },
-        ]
-      },
-      {
-        class: "Lectures",
-        subitems: [
-          
           {
             title: "(UVa) CS 387: Applied Cryptography",
             link: "https://www.udacity.com/course/cs387"
           },
           {
-            title: "(Waterloo) CS 860: Algorithms for Private Data Analysis",
-            link: "http://www.gautamkamath.com/CS860-fa2020.html"
+            title: "(MIT) 6.875: Cryptography",
+            link: "https://www.youtube.com/watch?v=jDsfV2ohFPs&list=PL6ogFv-ieghe8MOIcpD6UDtdK-UMHG8oH&index=1"
           },
           {
-            title: "(Columbia) TR's algorithm",
-            link: "http://timroughgarden.org/videos.html"
+            title: "a16z crypto",
+            link: "https://www.youtube.com/@a16zcrypto/featured"
           },
           {
             title: "(MOOC) Zero Knowledge Proofs",
             link: "https://zk-learning.org/"
+          },
+          {
+            title: "(MOOC) Decentralized Finance",
+            link: "https://defi-learning.org/f22"
+          },
+          { 
+            title: "(Bristol) 52 Things Every PhD Student Should Know to do Cryptography",
+            link: "http://bristolcrypto.blogspot.com/2014/10/52-things-number-1-different-types-of.html"
+          },
+          {
+            title: "(Wollongong) Journal of WoCrypt",
+            link: "https://documents.uow.edu.au/~fuchun/jow.html"
+          },
+          {
+            title: "Understanding Cryptography",
+            link: "https://www.crypto-textbook.com/index.php"
+          },
+          {
+            title: "(Waterloo) CrySP Speaker Series on Privacy",
+            link: "https://www.youtube.com/playlist?list=PLZbR2QOQNK9EjUXYDUJ0rGfxfP7n_nfmP"
+          },
+          {
+            title: "(BIU) The 13th BIU Winter School on cryptography",
+            link: "https://cyber.biu.ac.il/event/the-13th-biu-winter-school-on-cryptography/"
+          },
+          {
+            title: "ETHEREUM Docs",
+            link: "https://ethereum.org/en/developers/docs/"
+          },
+          {
+            title: "a16z Crypto Startup School",
+            link: "https://www.youtube.com/watch?v=jVehCoqJgYQ&list=PLM4u6XbiXf5oDP6DFeEoNP5K_Epy1RAx4&index=1"
+          },
+          {
+            title: "ZK Podcast",
+            link: "https://zeroknowledge.fm/"
+          },
+          {
+            title: "Zama",
+            link: "https://www.zama.ai/"
+          },
+          {
+            title: "Awesome-cryptography",
+            link: "https://github.com/sobolevn/awesome-cryptography"
+          }
+        ]
+      },
+      {
+        class: "Privacy",
+        subitems: [
+          {
+            title: "(Waterloo) CS 860: Algorithms for Private Data Analysis",
+            link: "http://www.gautamkamath.com/CS860-fa2020.html"
           },
           {
             title: "(BU) Privacy in Statistics and Machine Learning",
@@ -79,8 +118,29 @@ export default {
             link: "http://researchers.lille.inria.fr/abellet/teaching/private_machine_learning_course.html"
           },
           {
-            title: "(BIU) The 12th BIU Winter School on Cryptography Advances in Secure Computation",
-            link: "https://cyber.biu.ac.il/event/the-12th-biu-winter-school-on-cryptography/"
+            title: "(Katrina Ligett) Differential Privacy and Learning: The Tools, The Results, and The Frontier",
+            link: "https://www.youtube.com/watch?v=hoEyvHCRRc8"
+          },
+          {
+            title: "DifferentialPrivacy.org",
+            link: "https://differentialprivacy.org/"
+          },
+        ]
+      },
+      {
+        class: "Machine Learning",
+        subitems: [
+          {
+            title: "Privacy and Security in ML Seminars",
+            link: "https://prisec-ml.github.io/"
+          },
+          {
+            title: "Seminars on Security & Privacy in Machine Learning",
+            link: "https://vsehwag.github.io/SPML_seminar/"
+          },
+          {
+            title: "TRUSTWORTHY ML INITIATIVE",
+            link: "https://www.trustworthyml.org/home"
           },
           {
             title: "(CMU) 10-414/714: Deep Learning Systems",
@@ -125,19 +185,44 @@ export default {
             link: "https://efficientml.ai/"
           },
           {
-            title: "(MIT) Missing Semester",
-            link: "https://www.youtube.com/watch?v=Z56Jmr9Z34Q&list=PLyzOVJj3bHQuloKGG59rS43e29ro7I57J&index=1"
-          },
-
+            title: "Learning Bayesian Statistics",
+            link: "https://nicholas.carlini.com/writing"
+          }
         ]
       },
       {
-        class: "Talks",
+        class: "Biology",
         subitems: [
           {
-            title: "(Katrina Ligett) Differential Privacy and Learning: The Tools, The Results, and The Frontier",
-            link: "https://www.youtube.com/watch?v=hoEyvHCRRc8"
-          }
+            title: "(MIT) 7.00x: Introduction to Biology - The Secret of Life",
+            link: "https://learning.edx.org/course/course-v1:MITx+7.00x+3T2022/home"
+          },
+        
+        ]
+      },
+      {
+        class: "Lectures",
+        subitems: [
+          {
+            title: "(Columbia) TR's algorithm",
+            link: "http://timroughgarden.org/videos.html"
+          },
+          {
+            title: "(UCSD) DSC 291: Coding Theory",
+            link: "https://sites.google.com/ucsd.edu/coding-theory"
+          },
+          {
+            title: "(MIT) Missing Semester",
+            link: "https://www.youtube.com/watch?v=Z56Jmr9Z34Q&list=PLyzOVJj3bHQuloKGG59rS43e29ro7I57J&index=1"
+          },
+          {
+            title: "(UCB) CS 287: Advanced Robotics",
+            link: "https://people.eecs.berkeley.edu/~pabbeel/cs287-fa19/"
+          },
+          {
+            title: "(MIT) 6.874: Deep Learning in Life Sciences",
+            link: "https://www.youtube.com/playlist?list=PLypiXJdtIca5ElZMWHl4HMeyle2AzUgVB"
+          },
         ]
       },
       {
@@ -187,10 +272,6 @@ export default {
             link: "https://nicholas.carlini.com/writing"
           },
           {
-            title: "DifferentialPrivacy.org",
-            link: "https://differentialprivacy.org/"
-          },
-          {
             title: "BIU",
             link: "http://cyber.biu.ac.il/"
           },
@@ -202,15 +283,6 @@ export default {
             title: "Apple Security Research",
             link: "https://security.apple.com/"
           },
-        ]
-      },
-      {
-        class: "Podcast",
-        subitems: [
-          {
-            title: "Learning Bayesian Statistics",
-            link: "https://nicholas.carlini.com/writing"
-          }
         ]
       },
       {
@@ -244,15 +316,6 @@ export default {
           {
             title: "MPI TCS",
             link: "https://www.mpi-inf.mpg.de/departments/algorithms-complexity"
-          },
-        ]
-      },
-      {
-        class: "Blockchain",
-        subitems: [
-          {
-            title: "ETHEREUM",
-            link: "https://ethereum.org/en/developers/docs/"
           },
         ]
       },

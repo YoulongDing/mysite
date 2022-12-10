@@ -12,7 +12,7 @@
     <v-row class="mx-5 mt-5 hidden-sm-and-down">
 
       <v-col sm="12" md="8" lg="8" class="px-lg-0 px-md-0">
-        <div class="white--text body-1 mt-10 mb-5 font-weight-medium mx-0">I am Youlong DING <span class="font-weight-regular">['jǝuló:ŋ diŋ]</span>, currently a fourth-year CS undergrad at Shenzhen University. I am also a research intern in <a href="https://ai.webank.com/pages/en.html" class="white--text font-weight-bold" target=“_blank”>WeBank AI Group</a>. My research interest is in privacy-preserving machine learning. <span class="font-weight-black">I am looking for the PhD postion in 23 Fall </span>(my <a href="https://drive.google.com/file/d/1o-M1Ar_d8M7sLXz5HwJzamGdpcqkEhAW/view?usp=sharing" class="white--text font-weight-bold" target=“_blank”>CV</a>).</div>
+        <div class="white--text body-1 mt-10 mb-5 font-weight-medium mx-0">I am Youlong DING <span class="font-weight-regular">['jǝuló:ŋ diŋ]</span>, currently a fourth-year CS undergrad at Shenzhen University. I am also a research intern in <a href="https://ai.webank.com/pages/en.html" class="white--text font-weight-bold" target=“_blank”>WeBank AI Group</a>, working on privacy-preserving machine learning. <span class="font-weight-black">I am looking for graduate studies in 23 Fall </span>(my <a href="https://drive.google.com/file/d/1o-M1Ar_d8M7sLXz5HwJzamGdpcqkEhAW/view?usp=sharing" class="white--text font-weight-bold" target=“_blank”>CV</a>).</div>
 
     <div class="white--text mt-10 mx-3">
       <p class="text-right font-italic">
@@ -72,10 +72,9 @@
     <div class="white--text body-1 font-weight-medium mx-5">
       <div class="font-weight-bold text-h6">News:</div>
       <ul>
-        <li>My paper titled "Revisiting Hyperparameter Tuning with Differential Privacy" has been accepted to 2022 NeurIPS ML Safety Workshop.</li>
+        <li>My paper titled <a href="https://arxiv.org/abs/2211.01852" class="white--text font-weight-black" target=“_blank”>"Revisiting Hyperparameter Tuning with Differential Privacy"</a> has been accepted to 2022 NeurIPS ML Safety Workshop.</li>
         <li>I have won 2rd place in <a href="https://mlmac.io/" class="white--text font-weight-black" target=“_blank”>MLMAC 2022</a>. See you at <a href="https://satml.org/" class="white--text font-weight-black" target=“_blank”>SATML 2023</a> in February 2023, North Carolina.</li>
       </ul>
-      
     </div>
 
   
