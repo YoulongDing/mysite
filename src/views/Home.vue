@@ -12,7 +12,9 @@
     <v-row class="mx-5 mt-5 hidden-sm-and-down">
 
       <v-col sm="12" md="8" lg="8" class="px-lg-0 px-md-0">
-        <div class="white--text body-1 mt-10 mb-5 font-weight-medium mx-0">I am Youlong DING <span class="font-weight-regular">['jǝuló:ŋ diŋ]</span>, currently a fourth-year CS undergrad at Shenzhen University. I am also a research intern in <a href="https://ai.webank.com/pages/en.html" class="white--text font-weight-bold" target=“_blank”>WeBank AI Group</a>, working on privacy-preserving machine learning. <span class="font-weight-black">I am looking for TCS/Crypto graduate studies in 23 Fall </span>(my <a href="https://drive.google.com/file/d/1o-M1Ar_d8M7sLXz5HwJzamGdpcqkEhAW/view?usp=sharing" class="white--text font-weight-bold" target=“_blank”>CV</a>).</div>
+        <div class="white--text body-1 mt-10 mb-5 font-weight-medium mx-0">I am Youlong DING <span class="font-weight-regular">['jǝuló:ŋ diŋ]</span>, currently a fourth-year CS undergrad at Shenzhen University. 
+        <!-- I am also a research intern in <a href="https://ai.webank.com/pages/en.html" class="white--text font-weight-bold" target=“_blank”>WeBank AI Group</a>, working on privacy-preserving machine learning. <span class="font-weight-black"> -->
+        I am looking for TCS/Crypto graduate studies in 23 Fall </span>(my <a href="https://drive.google.com/file/d/1o-M1Ar_d8M7sLXz5HwJzamGdpcqkEhAW/view?usp=sharing" class="white--text font-weight-bold" target=“_blank”>CV</a>).</div>
 
     <div class="white--text mt-10 mx-3">
       <p class="text-right font-italic">
@@ -20,11 +22,11 @@
       </p>
     </div>
       </v-col>
-      <v-col sm="12" md="8" lg="4" class="pl-10">
+      <v-col sm="12" md="8" lg="3" class="pl-10">
         <v-card elevation="5">
           <v-img
             lazy-src="https://picsum.photos/id/11/10/6"
-            :src="require('../../static/dylon.jpeg')"
+            :src="require('../../static/dylon.jpg')"
           ></v-img>
         </v-card>
         </v-col>
@@ -37,7 +39,7 @@
         <v-card elevation="5">
           <v-img
             lazy-src="https://picsum.photos/id/11/10/6"
-            :src="require('../../static/dylon.jpeg')"
+            :src="require('../../static/dylon.jpg')"
           ></v-img>
         </v-card>
       </div>
