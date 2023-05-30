@@ -38,6 +38,16 @@ export default {
   data: () => ({
     items:[
       {
+        class: "TCS",
+        subitems: [
+          {
+            title: "(CMU) 15751: TCS Toolkit",
+            link: "https://www.diderot.one/courses/28"
+          },
+        ]
+      },
+      
+      {
         class: "Crypto",
         subitems: [
           {
@@ -47,6 +57,10 @@ export default {
           {
             title: "(MIT) 6.875: Cryptography",
             link: "https://www.youtube.com/watch?v=jDsfV2ohFPs&list=PL6ogFv-ieghe8MOIcpD6UDtdK-UMHG8oH&index=1"
+          },
+          {
+            title: "(TU Graz) CRYPTANALYSIS",
+            link: "https://www.iaik.tugraz.at/course/cryptanalysis-705068-sommersemester-2023/"
           },
           {
             title: "a16z crypto",
