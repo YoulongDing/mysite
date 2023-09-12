@@ -47,10 +47,10 @@
       <p class="white--text text-h5 mb-lg-5 mb-sm-1 mb-xs-1 font-weight-medium">Dylon</p>
       </v-row>
       <v-row justify="center">
-      <p class="white--text mb-0 font-weight-medium">Shenzhen, China</p>
+      <p class="white--text mb-0 font-weight-medium">Jerusalem, Israel</p>
       </v-row>
       <v-row justify="center">
-      <p class="white--text subtitle mb-lg-5 mb-sm-1 mb-xs-1 font-weight-medium">dingyoulon@gmail.com</p>
+      <p class="white--text subtitle mb-lg-5 mb-sm-1 mb-xs-1 font-weight-regular">dingyoulon@gmail.com</p>
       </v-row>
 
       <v-row justify="center" class="mb-0">
@@ -126,7 +126,8 @@ export default {
     urls: [
       { icon: "mdi-twitter", to: 'https://twitter.com/YoulongDING'},
       { icon: "mdi-linkedin", to: 'https://www.linkedin.com/in/Youlong-ding-2368701a6/'},
-      { icon: "mdi-github", to: 'https://github.com/YoulongDing'},
+      // { icon: "mdi-github", to: 'https://github.com/YoulongDing'},
+      { icon: "mdi-google", to: 'https://scholar.google.com/citations?user=pNn0l3oAAAAJ&hl=en&oi=ao'},
 
     ],
 
