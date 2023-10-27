@@ -12,7 +12,7 @@
     <v-row class="mx-5 mt-5 hidden-sm-and-down">
 
       <v-col sm="12" md="8" lg="8" class="px-lg-0 px-md-0">
-        <div class="white--text body-1 mt-10 mb-5 font-weight-medium mx-0">I am Youlong DING <span class="font-weight-regular">['jǝuló:ŋ diŋ]</span>, currently a first-year CS MSc student at Hebrew University of Jerusalem. I work on cryptography. (my <a href="https://drive.google.com/file/d/18xagYA6oFVaTStgjr_bZqveavjuw9OAE/view?usp=sharing" class="white--text font-weight-bold" target=“_blank”>CV</a>).</div>
+        <div class="white--text body-1 mt-10 mb-5 font-weight-medium mx-0">I am Youlong DING <span class="font-weight-regular">['jǝuló:ŋ diŋ]</span>, currently a first-year CS MSc student at Hebrew University of Jerusalem, advised by <a href="https://www.cs.huji.ac.il/~ilank/" class="white--text font-weight-bold" target=“_blank”>Ilan Komargodski</a>. I work on cryptography. (my <a href="https://drive.google.com/file/d/18xagYA6oFVaTStgjr_bZqveavjuw9OAE/view?usp=sharing" class="white--text font-weight-bold" target=“_blank”>CV</a>).</div>
         <!-- I am also a research intern in <a href="https://ai.webank.com/pages/en.html" class="white--text font-weight-bold" target=“_blank”>WeBank AI Group</a>, working on privacy-preserving machine learning.  -->
         <!-- <span class="font-weight-black">
         I am looking for Crypto graduate studies </span> -->
@@ -61,7 +61,7 @@
       </div>
 
 
-      <div class="white--text body-1 mt-10 mb-5 font-weight-medium mx-5">I am Youlong DING <span class="font-weight-regular">['jǝuló:ŋ diŋ]</span>, currently a first-year CS MSc student at Hebrew University of Jerusalem. I work on cryptography. (my <a href="https://drive.google.com/file/d/18xagYA6oFVaTStgjr_bZqveavjuw9OAE/view?usp=sharing" class="white--text font-weight-bold" target=“_blank”>CV</a>).</div>
+      <div class="white--text body-1 mt-10 mb-5 font-weight-medium mx-5">I am Youlong DING <span class="font-weight-regular">['jǝuló:ŋ diŋ]</span>, currently a first-year CS MSc student at Hebrew University of Jerusalem, advised by <a href="https://www.cs.huji.ac.il/~ilank/" class="white--text font-weight-bold" target=“_blank”>Ilan Komargodski</a>. I work on cryptography. (my <a href="https://drive.google.com/file/d/18xagYA6oFVaTStgjr_bZqveavjuw9OAE/view?usp=sharing" class="white--text font-weight-bold" target=“_blank”>CV</a>).</div>
       <div class="white--text mt-10 mx-5">
       <p class="text-right font-italic">
         Nontrivial enough to be trivially scooped.

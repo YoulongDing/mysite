@@ -38,6 +38,19 @@ export default {
   data: () => ({
     items:[
       {
+        class: "Advice",
+        subitems: [
+          {
+            title: "Applying to Ph.D. Programs in Computer Science",
+            link: "https://www.cs.cmu.edu/~harchol/gradschooltalk.pdf"
+          },
+          {
+            title: "Mentoring Workshop and Videos@Crypto 2021",
+            link: "https://www.youtube.com/@mentoringworkshopandvideos7146"
+          }
+        ]
+      },
+      {
         class: "TCS",
         subitems: [
           {
@@ -57,6 +70,11 @@ export default {
           {
             title: "(MIT) 6.875: Cryptography",
             link: "https://www.youtube.com/watch?v=jDsfV2ohFPs&list=PL6ogFv-ieghe8MOIcpD6UDtdK-UMHG8oH&index=1"
+          },
+          {
+            title: "(UMich) EECS 598: Privacy Enhancing Technologies(PETS)",
+            link: "https://sites.google.com/umich.edu/eecs598-9-w2023/"
+            
           },
           {
             title: "(TU Graz) CRYPTANALYSIS",
