@@ -12,16 +12,17 @@
       </template>
     </v-snackbar>
 
-    <v-app-bar app :src="require('../../static/bg.png')" flat>
+    <!-- <v-app-bar app :src="require('../../static/bg.png')" flat> -->
+    <v-app-bar app flat>
       <!-- drawer-icon -->
       <v-app-bar-nav-icon
-        color="white"
+        color="black"
         @click="Toggledrawer"
       ></v-app-bar-nav-icon>
 
       <!-- title -->
       <v-spacer></v-spacer>
-      <v-toolbar-title class="white--text title">
+      <v-toolbar-title class="black--text title">
         <div  justify="center">
         <span class="font-weight">Youlong</span>
         <span class="font-weight-bold"> DING</span></div>
@@ -44,17 +45,17 @@
       </v-row>
       
       <v-row justify="center">
-      <p class="white--text text-h5 mb-lg-5 mb-sm-1 mb-xs-1 font-weight-medium">Dylon</p>
+      <p class="black--text text-h5 mb-lg-5 mb-sm-1 mb-xs-1 font-weight-medium">Dylon</p>
       </v-row>
       <v-row justify="center">
-      <p class="white--text mb-0 font-weight-medium">Jerusalem, Israel</p>
+      <p class="black--text mb-0 font-weight-medium">Jerusalem, Israel</p>
       </v-row>
       <v-row justify="center">
-      <p class="white--text subtitle mb-lg-5 mb-sm-1 mb-xs-1 font-weight-regular">dingyoulon@gmail.com</p>
+      <p class="black--text subtitle mb-lg-5 mb-sm-1 mb-xs-1 font-weight-regular">dingyoulon@gmail.com</p>
       </v-row>
 
       <v-row justify="center" class="mb-0">
-      <v-btn text color="white" v-for="url in urls" :key="url.id"
+      <v-btn text color="black" v-for="url in urls" :key="url.id"
          @click="openURL(url.to)" fab
         ><v-icon large> {{ url.icon }} </v-icon></v-btn>
       </v-row>
@@ -64,7 +65,8 @@
       <!-- <v-subheader>REPORTS</v-subheader> -->
       <v-list-item-group
         v-model="selectedItem"
-        color="primary"
+       
+        color="black"
       >
         <v-list-item
           v-for="(item, i) in items"
@@ -74,7 +76,7 @@
           <v-list-item-icon>
             <v-icon v-text="item.action"></v-icon>
           </v-list-item-icon>
-          <v-list-item-content class="white--text font-weight-medium">
+          <v-list-item-content class="black--text font-weight-medium">
             <v-list-item-title v-text="item.title"></v-list-item-title>
           </v-list-item-content>
         </v-list-item>

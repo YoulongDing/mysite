@@ -17,11 +17,11 @@ export default {
 
   data: () => ({
     bg: {
-      backgroundImage: "url(" + require("../static/bg.png"),
-      backgroundSize: "cover",
-      backgroundRepeat: "no-repeat",
-      backgroundPosition: "center",
-      backgroundAttachment: "fixed",
+      // backgroundImage: "url(" + require("../static/bg.png"),
+      // backgroundSize: "cover",
+      // backgroundRepeat: "no-repeat",
+      // backgroundPosition: "center",
+      // backgroundAttachment: "fixed",
     }
     //
   }),

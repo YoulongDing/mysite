@@ -59,6 +59,9 @@
 
   </v-container>
 
+  <v-divider class="my-10"></v-divider>
+
+
   <!-- <v-container> -->
   <v-timeline class="mx-15 px-15 mt-0 mb-10 hidden-md-and-down">
     <v-timeline-item
