@@ -16,8 +16,8 @@
       <!-- :src="require('../../static/icpc_photo.jpg')" -->
       <!-- ICPC -->
       <v-row class="mx-5 hidden-sm-and-down">
-        <v-col sm="12" md="12" lg="4" class="pl-md-8">
-        <v-card elevation="10">
+        <v-col sm="12" md="12" lg="3" class="pl-md-8">
+        <v-card elevation="1">
           <v-img
             lazy-src="https://picsum.photos/id/11/10/6"
             :src="require('../../static/icpc_photo.jpg')"
@@ -47,7 +47,7 @@
 
 
       <div class="black--text body-1 mx-5  dark my-5 hidden-md-and-up">
-        <v-card elevation="10">
+        <v-card elevation="1">
           <v-img
             lazy-src="https://picsum.photos/id/11/10/6"
             :src="require('../../static/icpc_photo.jpg')"

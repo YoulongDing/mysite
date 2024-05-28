@@ -3,7 +3,7 @@
   <v-container>
     
     <div class="mt-10 mb-5 mx-5 hidden-lg-and-up ">
-      <v-card elevation="10">
+      <v-card elevation="1">
         
         <v-carousel cycle :show-arrows="true" dark  height="250" hide-delimiters>
               <!-- <v-responsive :aspect-ratio="16/9"> -->
@@ -18,10 +18,11 @@
       </v-card>
     </div>
 
-    <v-row class="mt-10 mb-5 mx-5 hidden-md-and-down">
-      <v-col lg="4" sm="12">
-        <v-card elevation="10" class="mx-2">
-          <v-carousel cycle :show-arrows="false" dark  hide-delimiters height="400">
+    <v-row class="mt-10 mb-5 mx-10 hidden-md-and-down">
+      <v-col lg="1" sm="0"></v-col>
+      <v-col lg="3" sm="12">
+        <v-card elevation="1" class="mx-2">
+          <v-carousel cycle :show-arrows="false" dark  hide-delimiters height="350">
             <v-carousel-item
               v-for="(item,i) in items_left"
               :key="i"
@@ -31,9 +32,10 @@
           </v-carousel>
         </v-card>
       </v-col>
-      <v-col lg="8" sm="12">
-        <v-card elevation="10" class="mx-2">
-          <v-carousel cycle :show-arrows="false" dark height="400">
+       <v-col lg="1" sm="0"></v-col>
+      <v-col lg="6" sm="12">
+        <v-card elevation="1" class="mx-2">
+          <v-carousel cycle :show-arrows="false" dark height="350">
             <!-- hide-delimiters -->
             <v-carousel-item
               v-for="(item,i) in items_right"
@@ -44,6 +46,7 @@
           </v-carousel>
         </v-card>
       </v-col>
+       <v-col lg="1" sm="0"></v-col>
     </v-row>
 
     <div class="white--text  body-1  dark my-7 mx-5 hidden-lg-and-up"

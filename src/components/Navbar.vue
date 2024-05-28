@@ -61,7 +61,8 @@
       </v-row>
 
       <v-row justify="center">
-      <v-list flat dark>
+      <!-- <v-list flat dark> -->
+      <v-list flat>
       <!-- <v-subheader>REPORTS</v-subheader> -->
       <v-list-item-group
         v-model="selectedItem"

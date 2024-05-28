@@ -12,17 +12,19 @@
     <v-row class="mx-5 mt-5 hidden-sm-and-down">
 
       <v-col sm="12" md="8" lg="8" class="px-lg-0 px-md-0">
-        <div class="black--text body-1 mt-10 mb-5 font-weight-medium mx-0">I am Youlong DING <span class="font-weight-regular">['jǝuló:ŋ diŋ]</span>, currently a first-year CS MSc student at The Hebrew University of Jerusalem, advised by <a href="https://www.cs.huji.ac.il/~ilank/" class="black--text font-weight-bold" target=“_blank”>Ilan Komargodski</a>. I work on cryptography and privacy. (my <a href="https://drive.google.com/file/d/1U1w6wjkrcHU8t0cIE90f0KNDQjjbME_7/view?usp=sharing" class="black--text font-weight-bold" target=“_blank”>CV</a>).</div>
+        <div class="black--text body-1 mt-10 mb-5 font-weight-medium mx-0">I am Youlong DING <span class="font-weight-regular">['jǝuló:ŋ diŋ]</span>, currently a first-year CS MSc student at The Hebrew University of Jerusalem, advised by <a href="https://www.cs.huji.ac.il/~ilank/" class="black--text font-weight-bold" target=“_blank”>Ilan Komargodski</a>. I work on cryptography and privacy. </div>
         <!-- I am also a research intern in <a href="https://ai.webank.com/pages/en.html" class="black--text font-weight-bold" target=“_blank”>WeBank AI Group</a>, working on privacy-preserving machine learning.  -->
         <!-- <span class="font-weight-black">
         I am looking for Crypto graduate studies </span> -->
+
+    <div class="mx-0">My <a href="https://drive.google.com/file/d/1U1w6wjkrcHU8t0cIE90f0KNDQjjbME_7/view?usp=sharing" class="black--text font-weight-bold" target=“_blank”>CV</a>.</div>
 
     <div class="black--text mt-10 mx-3">
       <p class="text-right font-italic">
       Nontrivial enough to be trivially scooped.
       </p>
     </div>
-      </v-col>
+    </v-col>
       <!-- <v-col sm="12" md="8" lg="3" class="pl-10">
         <v-hover v-slot="{ isHovering}">
         <v-card elevation="5">
@@ -33,9 +35,9 @@
         </v-card>
         </v-hover>
         </v-col> -->
-         <v-col sm="12" md="8" lg="3" class="pl-10">
+         <v-col sm="12" md="8" lg="2" class="pl-10">
 
-        <v-card elevation="5">
+        <v-card elevation="1">
           <v-img
             lazy-src="https://picsum.photos/id/11/10/6"
             :src="currentImage"
@@ -48,11 +50,12 @@
 
     <img :src="hoverImage" alt="Preload" style="display: none;">
 
+
     <!-- mobile -->
 
     <div class="black--text body-1  dark my-10 hidden-md-and-up">
         <div class="mx-10 px-10 mt-5">
-        <v-card elevation="5">
+        <v-card elevation="1">
           <v-img
             lazy-src="https://picsum.photos/id/11/10/6"
             :src="require('../../static/dylon.jpg')"
@@ -61,7 +64,10 @@
       </div>
 
 
-      <div class="black--text body-1 mt-10 mb-5 font-weight-medium mx-5">I am Youlong DING <span class="font-weight-regular">['jǝuló:ŋ diŋ]</span>, currently a first-year CS MSc student at The Hebrew University of Jerusalem, advised by <a href="https://www.cs.huji.ac.il/~ilank/" class="black--text font-weight-bold" target=“_blank”>Ilan Komargodski</a>. I work on cryptography and privacy. (my <a href="https://drive.google.com/file/d/1U1w6wjkrcHU8t0cIE90f0KNDQjjbME_7/view?usp=sharing" class="black--text font-weight-bold" target=“_blank”>CV</a>).</div>
+      <div class="black--text body-1 mt-10 mb-5 font-weight-medium mx-5">I am Youlong DING <span class="font-weight-regular">['jǝuló:ŋ diŋ]</span>, currently a first-year CS MSc student at The Hebrew University of Jerusalem, advised by <a href="https://www.cs.huji.ac.il/~ilank/" class="black--text font-weight-bold" target=“_blank”>Ilan Komargodski</a>. I work on cryptography and privacy.</div>
+
+      <div class="mx-0">My <a href="https://drive.google.com/file/d/1U1w6wjkrcHU8t0cIE90f0KNDQjjbME_7/view?usp=sharing" class="black--text font-weight-bold" target=“_blank”>CV</a>.</div>
+
       <div class="black--text mt-10 mx-5">
       <p class="text-right font-italic">
         Nontrivial enough to be trivially scooped.
@@ -107,9 +113,9 @@ export default {
     // Navbar
   },
   data: () => ({
-    defaultImage: require('../../static/dylon.jpg'),
+    defaultImage: require('../../static/dylon_cam.jpg'),
     hoverImage: require('../../static/dylon_ch.jpg'), 
-    currentImage: require('../../static/dylon.jpg')
+    currentImage: require('../../static/dylon_cam.jpg')
 
   }),
   
