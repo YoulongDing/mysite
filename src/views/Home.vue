@@ -91,7 +91,7 @@
     <div class="black--text body-1 font-weight-medium mx-5">
       <div class="font-weight-bold text-h6">News:</div>
       <ul>
-         <li>[May 27, 2024] My paper titled <a href="https://arxiv.org/abs/2305.17633" class="black--text font-weight-black" target=“_blank”>"Delving into Differentially Private Transformer"</a> has been accepted to ICML 2024. See you in Vienna!</li>
+         <li>[May 27, 2024] My paper titled <a href="https://arxiv.org/pdf/2405.18194" class="black--text font-weight-black" target=“_blank”>"Delving into Differentially Private Transformer"</a> has been accepted to ICML 2024. See you in Vienna!</li>
         <li>[Nov 11, 2022] My paper titled <a href="https://arxiv.org/abs/2211.01852" class="black--text font-weight-black" target=“_blank”>"Revisiting Hyperparameter Tuning with Differential Privacy"</a> has been accepted to 2022 NeurIPS ML Safety Workshop.</li>
         <li>I have won 2rd place in <a href="https://mlmac.io/" class="black--text font-weight-black" target=“_blank”>MLMAC 2022</a>. See you at <a href="https://satml.org/" class="black--text font-weight-black" target=“_blank”>SATML 2023</a> in February 2023, North Carolina.</li>
       </ul>
