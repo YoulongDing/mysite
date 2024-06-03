@@ -21,7 +21,7 @@
 
     <div class="black--text mt-10 mx-3">
       <p class="text-right font-italic">
-      Nontrivial enough to be trivially scooped.
+      I don't write novel papers. I write novels.
       </p>
     </div>
     </v-col>
@@ -66,11 +66,11 @@
 
       <div class="black--text body-1 mt-10 mb-5 font-weight-medium mx-5">I am Youlong DING <span class="font-weight-regular">['jǝuló:ŋ diŋ]</span>, currently a first-year CS MSc student at The Hebrew University of Jerusalem, advised by <a href="https://www.cs.huji.ac.il/~ilank/" class="black--text font-weight-bold" target=“_blank”>Ilan Komargodski</a>. I work on cryptography and privacy.</div>
 
-      <div class="mx-0">My <a href="https://drive.google.com/file/d/1U1w6wjkrcHU8t0cIE90f0KNDQjjbME_7/view?usp=sharing" class="black--text font-weight-bold" target=“_blank”>CV</a>.</div>
+      <div class="mx-5">My <a href="https://drive.google.com/file/d/1U1w6wjkrcHU8t0cIE90f0KNDQjjbME_7/view?usp=sharing" class="black--text font-weight-bold" target=“_blank”>CV</a>.</div>
 
       <div class="black--text mt-10 mx-5">
       <p class="text-right font-italic">
-        Nontrivial enough to be trivially scooped.
+        I don't write novel papers. I write novels.
       </p>
     </div>
     </div>
